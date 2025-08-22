@@ -124,7 +124,7 @@ set shiftwidth=4 smarttab
 set expandtab
 set tabstop=8 softtabstop=0
 
-autocmd BufWritePost *.py silent !black --quiet % 2>/dev/null
+autocmd BufWritePost *.py silent !black -l 120 --quiet % 2>/dev/null
 autocmd BufWritePost *.sh silent !shfmt -i 4 -w % 2>/dev/null
 set autoread
 ```
